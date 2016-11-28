@@ -1,0 +1,2 @@
+# SHOPPING-CN-WWW.WORDPRESSLEAF.COM
+WORDPRESS主题SHOPPING汉化中文版由themostspecialname.com和www.wordpressleaf.com联合出品
