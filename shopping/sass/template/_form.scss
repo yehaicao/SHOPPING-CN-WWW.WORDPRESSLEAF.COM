@@ -1,0 +1,40 @@
+/*
+*  Form
+*/
+/* Button
+------------------------------------------------*/
+.btn-outline {
+    @include button-outline($btn-outline-color, $btn-outline-bg, $btn-outline-border-color, $btn-outline-font-size);
+}
+
+/* Select, Input button
+------------------------------------------------*/
+.chosen-container {
+    width: 100% !important;
+}
+
+//----------------button--------------------------
+.btn {
+    @include transition(all 0.5s);
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background: $btn-primary-bg;
+    &:hover, &:active {
+        background: $btn-primary-bg-hover;
+    }
+}
+
+.btn-default {
+    background: $btn-default-bg;
+    &:active,
+    &:hover {
+        background: $btn-default-bg-hover;
+    }
+}
+
+// input
+.form-control {
+    background: $input-bg;
+}

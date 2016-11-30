@@ -1,0 +1,46 @@
+/*
+ *  Revolution Slider
+ */
+.rev_slider_wrapper {
+    .tparrows {
+        &.default {
+            @include size(32px,60px);
+            line-height: 60px;
+            text-align: center;
+            color: $slideshow-button-color;
+            background: $slideshow-button-arrow-bg;
+            @include transition(all 0.5s);
+            top: 50% !important;
+            &:before {
+                content: "\f105";
+                font-family: $theme-font-name;
+                color: $white;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            &:hover, &:active {
+                background: $slideshow-button-arrow-hover-bg;
+            }
+        }
+        &.tp-leftarrow {
+            &:before {
+                content: "\f104";
+            }
+        }
+    }
+    .tp-bullets.round {
+        z-index: 99;
+        .bullet {
+            @include size(11px, 11px);
+            border-radius: $slideshow-button-radius;
+            border: 2px solid $slideshow-button-border-color;
+            background: $slideshow-button-bg;
+            &:hover, &.selected {
+                border-color: $slideshow-button-border-hover-color;
+            }
+        }
+    }
+    a.btn{
+        display: inline;
+    }
+}

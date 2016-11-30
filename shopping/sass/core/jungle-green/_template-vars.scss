@@ -1,0 +1,63 @@
+//define
+$image-theme-path-base 				:'../../../images/' ;
+$image-theme-path 					:'../../../images/jungle-green/' ;
+$theme-font-path            		:'../../../fonts/' ;
+$theme-color:               		#37bc9b ;
+$theme-color-second:               	#ec87c0 ;
+$theme-color-third:               	#434a54 ;
+$theme-border:						#79818d ;
+// font theme
+$theme-font-family:					'Roboto Condensed', sans-serif ;
+$theme-font-weight:					300 ;
+// topbar
+$topbar-bg:							#656d78 ;
+$topbar-border-color:				$topbar-bg ;
+$topbar-border-style:				solid ;
+$topbar-color:						#fff ;
+$topbar-menu-color:				    #fff ;
+// header
+$header-bg:                         #434a54 ;
+// search wpo
+$box-search-bg:						#656d78 ;
+$box-search-border-color:			#656d78 ;
+$box-search-border-radius:			0 ;
+$input-search-bg:					#f3f4f5 ;
+$input-search-border-color:			transparent ;
+//cart
+$cart-radius:						50% ;
+$cart-title-color:					$theme-color ;
+//vertical-menu
+$vertical-menu-bg:                  #ffffff ;
+$vertical-menu-link-color:          #434a54 ;
+$vertical-menu-link-hover-color:    $theme-color ;
+$vertical-menu-link-border-color:   #e3e3e3 ;
+// newsletter
+$newsletter-bg:                     #656d78 ;
+//footer
+$footer-link-color:					#ccd1d9 ;
+//input
+$input-bg:                       	#f3f4f5 ;
+
+
+//title product tab
+$tab-border-width:					0 0 1px ;
+$tab-border-color:					 transparent transparent $theme-color transparent ;
+$tabtop-hover-color:				$theme-color ;
+$tabtop-hover-bg:					#fff ;
+//before tab
+$tab-before-border:					$theme-color transparent transparent transparent ;
+$tab-before-bottom:				    -15px ;
+//after
+$tab-after-border:					$tabtop-hover-bg transparent transparent transparent ;
+$tab-after-bottom:				    -11px ;
+//main menu
+$navbar-link-color:                 #ccd1d9 ;
+$navbar-bg:                         lighten($header-bg,10%) !default;
+$navbar-border:                     lighten($header-bg,10%) !default;
+// nav theme
+$nav-link-hover-bg: 			    #fff ;
+//button
+$btn-primary-bg:                    $theme-color ;
+$btn-primary-bg-hover:              $theme-color-second ;
+$btn-default-bg:                    $theme-color-third ;
+$btn-default-bg-hover:              $theme-color ;

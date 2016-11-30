@@ -1,0 +1,74 @@
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+@mixin text-shadow($shadow) {
+    text-shadow: $shadow;
+    -webkit-text-shadow: $shadow;
+    -webkit-text-shadow: $shadow;
+    -moz-text-shadow: $shadow;
+    -ms-text-shadow: $shadow;
+    -o-text-shadow: $shadow;
+}
+
+@mixin appearance() {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+
+@mixin button-outline($color, $background, $border, $font-size) {
+    color: $color;
+    background-color: darken($background, 5%);
+    border-color: darken($border, 5%);
+    font-size: $font-size;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        color: $color;
+        background-color: darken($background, 3%);
+        border-color: darken($border, 3%);
+    }
+}
+
+@mixin border($width, $style, $color) {
+    border-width: $width;
+    border-style: $style;
+    border-color: $color;
+}
+
+@mixin wrapper($padding, $margin) {
+    padding: $padding;
+    margin: $margin;
+}
+
+@mixin font($size, $weight, $family) {
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $family;
+}
+
+@mixin tab-hover() {
+    position: absolute;
+    left: 50%;
+    content: "";
+    display: block;
+    @include size(0, 0);
+    margin: 0 0 0 -6px;
+}
+
+@mixin tab-before() {
+    @include border(6px 5px, solid, $tab-before-border);
+}
+
+@mixin tab-after() {
+    @include border(6px 5px, solid, $tab-after-border);
+    z-index: 99;
+}

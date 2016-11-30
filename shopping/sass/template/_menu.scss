@@ -1,0 +1,37 @@
+/*
+*  Main Menu
+*/
+.navbar-nav {
+    ul {
+        li {
+            &:hover {
+                a {
+
+                }
+            }
+            &.parent {
+                position: relative;
+            }
+        }
+    }
+    > li {
+        > a {
+
+        }
+        .dropdown-menu {
+            ul {
+                li {
+                    .dropdown-menu {
+
+                    }
+                    a {
+
+                    }
+                }
+            }
+        }
+        > .dropdown-menu {
+
+        }
+    }
+}

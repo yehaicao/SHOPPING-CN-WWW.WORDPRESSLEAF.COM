@@ -1,0 +1,273 @@
+/*------------------------------------*\
+    Customize Live Theme Editor
+\*------------------------------------*/
+.wpo-customize {
+    top: 0;
+    @include box-shadow(3px 3px 5px -3px rgba(0, 0, 0, 0.15));
+    background: #fff;
+    z-index: 999;
+    .tab-content {
+        padding: 3px 0;
+        border: none;
+    }
+    .panelbutton {
+        border-color: darken($border-color, 5%);
+        @include box-shadow(3px 3px 5px -3px rgba(0, 0, 0, 0.15));
+    }
+    .panel-heading {
+        padding: 3px 10px;
+    }
+    .group-input label {
+        font-weight: normal;
+    }
+    .group-input {
+        margin-bottom: 15px;
+        margin-right: 6px;
+    }
+
+    .label {
+        padding: 4px 5px;
+        &:hover, &:active {
+            background: $red;
+        }
+    }
+    .panelbutton {
+        right: -36px;
+        @include box-shadow(3px 3px 5px -3px rgba(0, 0, 0, 0.15));
+    }
+    .panel-heading {
+        padding: 2px 5px;
+    }
+    .group-input {
+        label {
+            font-weight: normal;
+        }
+    }
+}
+
+//-------------topbar-------------------
+.topbar {
+    background: $topbar-bg;
+    padding: 8px 0;
+    @include font(13px, 300, inherit);
+    position: relative;
+    color: $topbar-color;
+    a {
+        color: $topbart-link-color;
+        &:hover, &:active {
+            color: $topbart-link-color;
+        }
+    }
+    .top-menu a {
+        color: $topbar-menu-color;
+        &:hover, &:active {
+            color: $topbart-link-color;
+        }
+    }
+    &:before {
+        top: 100%;
+        left: 0;
+        @include size(100%, 1px);
+        position: absolute;
+        content: "";
+        display: block;
+        @include border(0 0 1px 0, $topbar-border-style, $topbar-border-color);
+        background: none;
+    }
+    .dropdown-phone > li > a{
+        padding:0;
+    }
+}
+
+//--------------- header-----------------
+.wpo-megamenu,
+.header-menu{
+    position: static;
+}
+.header-2{
+    .header-menu{
+        position: relative;
+    }
+}
+.wpo-header {
+    padding: 0 0 $theme-margin 0;
+    background: $header-bg;
+    .header-top {
+        position: relative;
+        padding: 21px 0;
+    }
+    .navbar-collapse{
+        padding: 0;
+    }
+}
+.header-top{
+    .navbar{
+        margin: 0;
+        background: transparent;
+        .nav{
+            > li > a{
+                color: $navbar-link-color;
+                font-size: $font-size-small;
+            }
+            .open > a,
+            .active > a {
+                &,
+                &:hover,
+                &:focus {
+                  color: $navbar-link-hover-color;
+                  background: transparent;
+                }
+            }
+        }
+    }
+}
+.header-bottom{
+    .navbar{
+        margin: 0;
+    }
+    .navbar-nav > li > a{
+        padding: 16px;
+    }
+}
+.header-3{
+    .search-form,
+    .header-menu{
+        padding: 0;
+    }
+    .header-bottom-inner{
+        position:relative;
+        background:$navbar-bg;
+        @include clearfix();
+    }
+    .search-form-inner{
+        padding:9px;
+    }
+}
+//-------------------content-------------------
+.wpo-mainbody{
+    position: relative;
+    z-index: 1;
+}
+//-------------------footer-------------------
+.wpo-footer{
+    margin: $theme-margin 0 0;
+}
+.footer {
+    @include border(1px 0, solid, $footer-border-color);
+    @include wrapper(40px 0 15px, 0);
+    background: $footer-bg;
+    a {
+        color: $footer-link-color;
+        &:hover, &:active, &.active {
+            color: $footer-link-hover-color;
+        }
+    }
+
+    .effect{
+        cursor: pointer;
+        i[class^="fa"] {
+            color: $footer-icon-color;
+            background: $footer-icon-bg;
+            @include size(26px, 26px);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 26px;
+            @include rtl-margin(0,10px,0,0);
+        }
+        &:hover{
+            i {
+                background: $footer-icon-bg-hover;
+            }
+            color: $footer-icon-color-hover;
+        }
+    }
+}
+
+//----------------copyright-----------------------
+.wpo-copyright {
+    @include wrapper(30px 0 20px 0, 0);
+    background: $wpo-copyright-bg;
+}
+.copyright {
+    @include clearfix();
+    text-align: center;
+    a {
+        color: $copyright-link-color;
+    }
+}
+//------------------wpo-filter--------------------------------
+#wpo-filter {
+    padding: $filter-padding;
+    background: $filter-bg;
+    @include border(1px 1px 0 1px, solid,$filter-border-color);
+    > * {
+        margin-bottom: 0;
+    }
+    form.woocommerce-ordering{
+        line-height: 0;
+    }
+    .display {
+        @include clearfix();
+        padding: 0;
+        list-style: none;
+        li {
+            @include rtl-float-left ();
+            @include rtl-margin-right($padding-small-vertical);
+            line-height: 29px;
+            a {
+                @include size(29px, 29px);
+                display: inline-block;
+                text-align: center;
+                background: #fff;
+                border: $filter-link-border;
+                color: $text-color;
+                span {
+                    @include hide-text();
+                    margin: 0;
+                }
+                &:hover,
+                &.active,
+                &:active,
+                &:focus {
+                    color: #fff;
+                    background: $filter-link-bg-hover;
+                    border: $filter-link-border;
+                }
+                &.waiting {
+                    color: #fff;
+                    background:url("#{$image-theme-path-base}ajax-loader@2x.gif") $theme-color;
+                    .fa {
+                        color: #fff;
+                    }
+                }
+            }
+            span {
+                display: inline-block;
+            }
+        }
+    }
+}
+/*------------------------------------*\
+    Sidebar left and right
+\*------------------------------------*/
+.wpb_content_element {
+    &.wpb_single_image {
+        margin-bottom: 0;
+    }
+}
+
+// newsletter
+.newsletter {
+    padding: 40px 0 35px 0;
+    background: $newsletter-bg;
+    h3 {
+        margin: 0 0 10px 0;
+        &.title {
+            color: $newsletter-title;
+        }
+    }
+    p{margin: 0}
+    .widget{
+        margin:0;
+    }
+}

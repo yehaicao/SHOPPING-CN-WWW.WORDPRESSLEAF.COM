@@ -1,0 +1,164 @@
+/*------------------------------------*\
+    Color
+\*------------------------------------*/
+.base-color{
+    color: $theme-color;
+}
+.white{
+    color: #fff;
+}
+.red{
+    color: #ff0000;
+}
+// font
+.bigtext{
+    font-size: 20px;
+}
+.title-page{
+    font-size: 25px;
+}
+.bigtext-error{
+    font-size: 150px;
+    color: $theme-color;
+}
+/*-------------------------------------------
+	No Margin
+-------------------------------------------*/
+.no-margin {
+    margin: 0 !important;
+}
+
+/*-------------------------------------------
+	No Padding
+-------------------------------------------*/
+.no-padding {
+    padding: 0 !important;
+}
+
+.place-order {
+    padding: $theme-margin;
+}
+
+/*------------------------------------*\
+    Mobile
+\*------------------------------------*/
+.icon-mobile {
+    @include size(30px, 30px);
+    color: $white;
+    display: table;
+    text-align: center;
+    @include border-radius(50%);
+    cursor: pointer;
+    margin: 10px 5px;
+    background: $icon-mobile-bg;
+    .fa {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+.icon-logo{
+    font-size: 45px;
+    color:  $banner-bottom-header-color;
+}
+// Alignment
+.text-right{
+    @include rtl-base-simple(text-align,$rtl-right);// rtl
+}
+.text-left{
+    @include rtl-base-simple(text-align,$rtl-left);// rtl
+}
+// media
+.media > .pull-left{
+    @include rtl-base-toprightbottomleft(margin,0 ,20px, 0, 0);
+}
+// table celendar
+table#wp-calendar{
+    width: 100%;
+    th,td{
+        text-align: center;
+        border: 1px solid $product-border-color;
+        padding: 5px 8px;
+    }
+}
+//--------------------------border hover------------------------------------
+div.hover-border{
+    &:hover{
+        &:before{
+            top: 0;
+            left: 0;
+        }
+        &:after{
+            top: 0;
+            right: 0;
+        }
+        div.hover-border-inner{
+            &:before{
+                top: 0;
+                left: 0;
+            }
+            &:after{
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+}
+div.hover-border,
+div.hover-border-inner{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    &:before,&:after{
+        @include transition(all 0.4s);
+        content: " ";
+        display: block;
+        position: absolute;
+        z-index: 99;
+        background: $theme-color;
+    }
+}
+div.hover-border{
+    &:before,&:after{
+        height: 100%;
+        width: 1px;
+    }
+    &:before{
+        top: -100%;
+        left: 0;
+    }
+    &:after{
+        top: 100%;
+        right: 0;
+    }
+}
+div.hover-border-inner{
+    border: $item-border;
+    &:before,&:after{
+        height: 1px;
+        width: 100%;
+    }
+    &:before{
+        top: 0;
+        left: 100%;
+    }
+    &:after{
+        bottom: 0;
+        left: -100%;
+    }
+}
+.under-base{
+    margin:0 0 $theme-margin ;
+    overflow: hidden;
+}
+.box-no-margin{
+    .woocommerce,
+    .box{
+        margin: 0;
+    }
+}
+//tab
+.tab-banner{
+    .tab-content{
+        border: 1px solid $product-border-color !important;
+    }
+}

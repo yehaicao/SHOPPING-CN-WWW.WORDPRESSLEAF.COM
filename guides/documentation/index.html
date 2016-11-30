@@ -1,0 +1,744 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Shopping WordPress Theme Guide</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="OpalTheme">
+	<meta name="copyright" content="OpalTheme">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2014-07-23T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#E0E4CC;color:#3D220C;}
+		::-moz-selection{background:#F38630;color:#FBFFE4;}
+		::selection{background:#F38630;color:#FBFFE4;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.jpg);}
+		a{color:#F38630;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #B9F2EF, #9CCCC9);
+			  background-image: -ms-linear-gradient(top, #B9F2EF, #9CCCC9);
+			  background-image: -webkit-gradient(linear, 0 0, 0 B9F2EF%, from(#A7DBD8), to(#9CCCC9));
+			  background-image: -webkit-linear-gradient(top, #B9F2EF, #9CCCC9);
+			  background-image: -o-linear-gradient(top, #B9F2EF, #9CCCC9);
+			  background-image: linear-gradient(top, #B9F2EF, #9CCCC9);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B9F2EF', endColorstr='#9CCCC9', GradientType=0);
+			  border-color: #9CCCC9 #9CCCC9 #bfbfbf;
+			  color:#3D220C;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #B9F2EF #B9F2EF #bfbfbf;
+		  background-color: #9CCCC9;
+		}
+		hr{border-top:1px solid #BEC2AD;border-bottom:1px solid #E9EDD4;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#A7DBD8;color:#3D220C;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #B9F2EF;-moz-text-shadow:1px 1px 0px #B9F2EF;text-shadow:1px 1px 0px #B9F2EF;}
+		#documenter_sidebar ul{border-top:1px solid #9CCCC9;}
+		#documenter_sidebar ul a{border-top:1px solid #B9F2EF;border-bottom:1px solid #9CCCC9;color:#3D220C;}
+		#documenter_sidebar ul a:hover{background:#F38630;color:#FBFFE4;border-top:1px solid #F38630;}
+		#documenter_sidebar ul a.current{background:#F38630;color:#FBFFE4;border-top:1px solid #F38630;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-shopping-wordpress-theme-guide">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#installation_theme" title="Installation Theme">Installation Theme</a></li>
+			<li><a href="#install_plugins" title="Install Plugins">Install Plugins</a></li>
+			<li><a href="#install_data_demo" title="Install Data Demo">Install Data Demo</a></li>
+			<li><a href="#install_widgets" title="Install Widgets">Install Widgets</a></li>
+			<li><a href="#setting_menu" title="Setting Menu">Setting Menu</a></li>
+			<li><a href="#setting_home_page" title="Setting Home Page">Setting Home Page</a></li>
+			<li><a href="#setting_the_blog_page" title="Setting the Blog Page">Setting the Blog Page</a></li>
+			<li><a href="#theme_options_panel" title="Theme Options Panel">Theme Options Panel</a></li>
+			<li><a href="#customization" title="Customization">Customization</a></li>
+			<li><a href="#setting_newsletter" title="Setting NewsLetter">Setting NewsLetter</a></li>
+			<li><a href="#setting_footer" title="Setting Footer">Setting Footer</a></li>
+			<li><a href="#faqs" title="FAQs">FAQs</a></li>
+			<li><a href="#finally" title="Finally">Finally</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright OpalTheme 2014<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Shopping WordPress Theme Guide</h1>
+	
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 07/23/2014</li>
+	<li>latest update: 07/23/2014</li>
+	<li>by: OpalTheme</li>
+	<li><a href=""></a></li>
+	<li>email: <a href="mailto:&#111;&#112;&#97;&#108;&#119;&#111;&#114;&#100;&#112;&#114;&#101;&#115;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#111;&#112;&#97;&#108;&#119;&#111;&#114;&#100;&#112;&#114;&#101;&#115;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p><p>HELLO ! FIRST OF ALL WE WOULD LIKE TO THANK YOU FOR CHOOSING OUR THEME! </p>
+
+<p>Here are some basics on installing, configuring and customizing the Opal Template
+If you have any questions that are beyond the scope of this help file, please feel free to contact us via email : <b>&#111;&#112;&#97;&#108;&#119;&#111;&#114;&#100;&#112;&#114;&#101;&#115;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</b> </p>
+</br>
+<p>	<b>Need Support?</b><br>
+	If you have any questions regarding to theme issues, please submit a ticket at&nbsp;<a href="http://wpopal.com/">http://wpopal.com/</a> (Registration Required)</p>
+<p>	We truly appreciate and really hope that you&#39;ll enjoy our theme!</p>
+<p>	<b>If you like this theme, Please support us by rating us 5 stars (<a href="http://screencast.com/t/ylPjXebiCIOE">How to rate</a>?) </b></p>
+<p>	<b>Best Regards,<br>
+	Opal WordPress Team</b></p></p>
+	</section>
+	
+	<section id="installation_theme">
+	<div class="page-header"><h3>Installation Theme</h3><hr class="notop"></div>
+<p>
+	To install this theme you must have a working version of WordPress already installed. Make sure your installed <strong>Wordpress version is 3.8 or higher</strong>. You also need to have <strong>PHP 5.2.4</strong> or<strong> higher versions (recommended is php 5.3+)</strong> and <strong>MySQL 5.0</strong> in order for OpalTheme to function correctly. If you need help installing WordPress, follow the instructions in WordPress Codex or you can watch the <a href="http://vimeo.com/17147778">Instructional Video</a> created by Woo Themes.</p>
+<h2>
+	1. Download</h2>
+<p>
+	Purchase Shopping template from Themeforst then you can download our template package on there.</p>
+<p>
+	Extract package that include all files and folders of theme.</p>
+<h2>
+	2. Installing Theme From the WordPress Dashboard</h2>
+<p>
+	Installing a WordPress theme is super easy, you&rsquo;ll see our video guide:</p>
+<p>
+	<iframe allowfullscreen="" frameborder="0" height="315" scrolling="no" src="http://www.youtube.com/embed/VQC9f3uauDI" width="560"></iframe></p>
+<p>
+	<strong>-&nbsp; </strong>Navigate to <strong>Appearance </strong>&rarr; <strong>Themes </strong>in your <strong>WordPress admin dashboard</strong>.</p>
+<p>
+	- Click the <strong>Add New</strong> button at the top of the page and go for the <strong>Upload option</strong>.</p>
+<p>
+	- For the file upload, pick <strong>Theme Files/shopping.zip</strong> in the theme package downloaded from <strong>ThemeForest </strong>and click <strong>Install Now</strong>.</p>
+<h2>
+	3. Installing By FTP</h2>
+<p>
+	Many users are on shared hosting with low upload limits, and in such situations the Striking theme is often too large to install through Wordpress. We suggest you should upload it via FTP.</p>
+<p>
+	If you don&#39;t know how to use FTP visit this link for information: <a href="http://codex.wordpress.org/FTP_Clients">http://codex.wordpress.org/FTP_Clients</a> . You will need to first uncompress the <strong>PACKAGE-theme.zip</strong> file you have found in the master zip downloaded from Themeforest. This zip uncompresses into a normal folder. This unzipped folder is all you need to transfer via ftp and if you open it, you will see all sorts of folders and css and php files which together contain all the theme coding.&nbsp;&nbsp;&nbsp;</p>
+<p>
+	Using the FTP program transfer this folder which contains the above files to the Wordpress installation theme root directory: <strong>/wp-content/themes</strong>.</p>
+<p>
+	<strong>Do not upload any of the other files or folders such as licensing or resource or documentation</strong>. Uploading any of the other folders may cause problems resulting in the theme not working properly. Learn from Wordpress Official Documentation about installing theme with FTP client or with cPanel: <a href="http://codex.wordpress.org/Using_Themes">http://codex.wordpress.org/Using_Themes</a></p>
+<h2>
+	4. Activate TheTheme As Default Theme</h2>
+<p>
+	After completing the upload, activate the theme as per activating any other theme.</p>
+<p>
+	Goto your <strong>Dashboard</strong> <strong>&gt;&gt; Appearance &gt;&gt; Themes &gt;&gt; Activate Shopping </strong>template</p>
+<p>
+	Follow that images:</p>
+<p>
+	<img alt="" src="assets/images/image_17.png"></p>
+<h2>
+	5. Known problems when installing the theme</h2>
+<div class="alert alert-info">
+	<strong>a. The &ldquo;Broken theme and/or stylesheets missing&rdquo; error is most common when you install or activate a new theme.</strong></div>
+<p>
+	However that doesn&rsquo;t necessarily mean that the theme was actually broken or the so important part is missing. It would rather mean that the theme was just uploaded to the server incorrectly and missing <strong>stylesheets are not missing but got to the wrong folder when downloading and unzipping.</strong></p>
+<p>
+	Here are some tips how to fix that:</p>
+<ul>
+	<li>
+		<strong>&nbsp;After downloading and unzipping open the final theme folder. Inside there will be the actual theme folder. The actual theme folder is where the &ldquo; style.css&rdquo; file is.</strong></li>
+	<li>
+		<strong>&nbsp;You must upload only the actual theme folder to your WordPress host. Our advice is to double check.</strong></li>
+	<li>
+		<strong>Enter your WordPress admin panel and activate your new theme.</strong></li>
+</ul>
+<p>
+	Summing up, the destination /wp-content/themes/themename/themename/style.css is incorrect and is the reason of &ldquo; Broken theme and/or stylesheets missing&rdquo; error message.</p>
+<p>
+	It must look like /wp-content/themes/themename/style.css</p>
+<div class="alert alert-info">
+	<strong>b. Problems with uploading via WP admin panel due Upload limit.</strong></div>
+<p>
+	You may check your file upload limit on Your Media Uploader page in WordPress. Depending upon the web hosting company and the conditions of the service they provide it may vary. The most common is about 8 MB which is more or less enough. But uploading some media files like audio and video may become a problem with for example 2 MB upload limit.<br>
+	We decided to share some tips about how to extend your maximum file upload size in WordPress:<br>
+	<strong>1. Through functions.php file:</strong></p>
+<p>
+	You may add the below mentioned code in the functions.php file of your theme</p>
+<div class="alert">
+	<strong>@ini_set( &#39;upload_max_size&#39; , &#39;64M&#39; );<br>
+	@ini_set( &#39;post_max_size&#39;, &#39;64M&#39;);<br>
+	@ini_set( &#39;max_execution_time&#39;, &#39;300&#39; );</strong></div>
+<p>
+	<strong>2. Through PHP.INI file:</strong></p>
+<p>
+	If you cannot see the php.ini file in your directory create the new one with below mentioned code and upload it to your root folder on your web server.</p>
+<p>
+	If you can see the php.ini file then change parameters or add :</p>
+<div class="alert">
+	<strong>upload_max_filesize = 64M<br>
+	post_max_size = 64M<br>
+	max_execution_time = 300<br>
+	In case that tip does not work with 64MB, try it with 10MB.</strong></div>
+<p>
+	<strong>3. Through .htaccess method</strong></p>
+<p>
+	You may try modifying the existing .htaccess file in the root directory or creating a new one.</p>
+<p>
+	Add the following code in the existing or new htacess file:</p>
+<div class="alert">
+	<strong>php_value upload_max_filesize 64M<br>
+	php_value post_max_size 64M<br>
+	php_value max_execution_time 300<br>
+	php_value max_input_time 300</strong></div>
+<p>
+	You can reset all of the setting for the each page on our custom panel by clicking &ldquo;Reset&rdquo; button on the bottom.</p>
+</section>
+<section id="install_plugins">
+	<div class="page-header"><h3>Install Plugins</h3><hr class="notop"></div>
+<p>
+	Right after the theme was activated, a notification at the top of the screen will suggest to continue with the installation of the plugins recommended for getting the best our of your theme.</p>
+<p>
+	Follow steps to install:</p>
+<p>
+	<strong>Step 1</strong>. Click &lsquo;<strong>Begin installing plugins</strong>&lsquo; and select the plugins you need to install from the list.</p>
+<p>
+	<img alt="" src="assets/images/image_29.png"></p>
+<p>
+	<strong>Step 2: </strong>Select all plugins then choose <strong>Install</strong> , Click <strong>Apply</strong> to install all plugins</p>
+<p>
+	<img alt="" src="assets/images/image_13.png"  ></p>
+<ul>
+	<li>
+		<strong>Plugins Using in Shopping theme </strong></li>
+</ul>
+<ol>
+	<li>
+		<strong>Contact Form 7: </strong>Allow you create contact forms.</li>
+	<li>
+		<strong>Option Framework:</strong> more configures theme.</li>
+	<li>
+		<strong>Revolution Slider: </strong>premium responsive slider.</li>
+	<li>
+		<strong>WPBakery Visual Composer:</strong> powerful visual composer to create page layout.</li>
+	<li>
+		<strong>WooCommerce:</strong> The Shop engine for your WordPress site.</li>
+	<li>
+		<strong>YITH WooCommerce Wishlist:</strong> enable wishlist in your site.</li>
+	<li>
+		<strong>YITH WooCommerce Compare:&nbsp; </strong>to use compare options.</li>
+</ol>
+<p>
+	<strong>Step 3:&nbsp; </strong>After Installing all Plugins, select <strong>Activate </strong>then click <strong>Apply </strong>to active all plugins.</p>
+<p>
+	<img alt="" src="assets/images/image_10.png"></p>
+<p>
+	<strong>Step 4:&nbsp; </strong>Installing Woocommerce</p>
+<p>
+	<img alt="" src="assets/images/image_36.png"></p>
+<p>
+	<strong>Follow our video guide to know more : </strong></p>
+<p>
+	<iframe allowfullscreen="" frameborder="0" height="315" scrolling="no" src="http://www.youtube.com/embed/DDvgLsiz_00" width="560"></iframe></p>
+</section>
+<section id="install_data_demo">
+	<div class="page-header"><h3>Install Data Demo</h3><hr class="notop"></div>
+<p>
+	Before installing data demo, you need setting up image sizes.</p>
+<h3>
+	<strong>1. How to setting up the Image Sizes</strong></h3>
+<p>
+	These settings affect the actual dimensions of your product images in the shop pages. You can skip this step in case you&rsquo;re starting a new website and your WordPress installation is fresh, but if you&rsquo;re switching from another theme and you already have products in your store, you need to make sure the WooCommerce image sizes are the correct ones for your newly installed theme.</p>
+<p>
+	a. Navigate to <strong>WooCommerce</strong> &rarr; <strong>Settings </strong>&rarr;<strong> Products</strong> and find the &ldquo;<strong>Product Image Sizes&nbsp;</strong>&rdquo; section at the bottom of the page.</p>
+<p>
+	Update those values with the following this image for <strong>Shopping theme.</strong></p>
+<p>
+	<img alt="" src="assets/images/image_24.png"></p>
+<p>
+	b. To see the changes after you update the image sizes, you need to<strong>&nbsp;re-generate</strong>&nbsp;the images by using <strong>Regen.Thumbnails</strong> Plugin</p>
+<p>
+	- Go to <strong>Plugins Tab&nbsp;</strong>then search and install Regen.Thumbnails plugin</p>
+<p>
+	<img alt="" src="assets/images/image_9.png"></p>
+<p>
+	- Navigating to <strong>Tools </strong>&rarr; <strong>Regen.Thumbnails&nbsp;</strong>then re-generate your images</p>
+<p>
+	<img alt="" src="assets/images/image_30.png"></p>
+<h3>
+	2. Importing The Demo Data - XML File</h3>
+<p>
+	The Shopping theme comes with importable demo data, such as pages, products blog posts, portfolio items, etc, to help you get started in case you&rsquo;re running on a fresh WordPress installation.</p>
+<p>
+	<strong>Step 1:</strong> From the WordPress admin area go to <strong>Tools </strong>&gt;&gt; <strong>Import </strong>and click on the <strong>WordPress</strong> link.</p>
+<p>
+	<img alt="" src="assets/images/image_7.png"></p>
+<p>
+	<strong>Step 2:</strong> You can import our <strong>all of our demo by one step </strong></p>
+<p>
+	<img alt="" src="assets/images/image_20.png"></p>
+<p>
+	<strong>Step 3: </strong><strong>Assign Authors</strong></p>
+<p>
+	<img alt="" src="assets/images/image_11.png"></p>
+<p>
+	<strong>Step 4 :Set a page as Home Page</strong></p>
+<p>
+	After import Dummy Data you need to set default Home page for your site, from your WordPress dashboard, navigate to<strong> Settings </strong>&rarr; <strong>Reading</strong>.</p>
+<p>
+	Select &ldquo;<strong>A static page</strong>&rdquo; and choose &ldquo;<strong>Dummy Homepage</strong>&rdquo; as the Front Page.</p>
+<p>
+	<img alt="" src="assets/images/image_6.png"></p>
+<p>
+	Save change then <strong>Homepage data sample&nbsp;</strong>will be set.</p>
+<p>
+	<strong>Follow our video guide to know more : </strong></p>
+<p>
+	<iframe allowfullscreen="" frameborder="0" height="315" scrolling="no" src="http://www.youtube.com/embed/-G85I-tnqJc" width="560"></iframe></p>
+</section>
+<section id="install_widgets">
+	<div class="page-header"><h3>Install Widgets</h3><hr class="notop"></div>
+<h2>
+	<strong>Layout of Widgets</strong></h2>
+<p>
+	You can see all our widgets, easy to config by drag and drop Widgets to sidebar or position you want.</p>
+<p>
+	Widget we use to build demo our site :</p>
+<p>
+	<img alt="" src="assets/images/image_34.png"></p>
+<p>
+	<strong>Follow our video guide to know more : </strong></p>
+<p>
+	<iframe allowfullscreen="" frameborder="0" height="315" scrolling="no" src="http://www.youtube.com/embed/wtKNfKNvask" width="560"></iframe></p>
+</section>
+<section id="setting_menu">
+	<div class="page-header"><h3>Setting Menu</h3><hr class="notop"></div>
+<p>
+	The following steps will guide you in defining your menus using the WordPress menu editor and Opal Megamenu.</p>
+<p>
+	Opal MegaMenu is a user-friendly, highly customizable responsive Mega Menu WordPress plugin to creat Menu.</p>
+<p>
+	In each menu, you can add as many items you need: links, pages, posts, custom links, shop categories, direct links to products, internal or external link even sidebars</p>
+<h3>
+	<strong>1. Use WordPress menu editor</strong></h3>
+<p>
+	&nbsp;- Navigate to <strong>Appearance</strong> &rarr; <strong>Menus </strong>and click the &ldquo;<strong>create a new menu</strong>&rdquo; link.</p>
+<p>
+	&nbsp;- Enter a name for it the &ldquo;<strong>Menu Name</strong>&rdquo; box and click the <strong>Create Menu</strong> button.</p>
+<p>
+	<img alt="" src="assets/images/image_2.png"></p>
+<p>
+	You can add as many items you need. Drag and drop to set sub menu or position of them.</p>
+<p>
+	<img alt="" src="assets/images/image_27.png"></p>
+<div class="alert">
+	Before leaving, set Theme Locations to assign menu then don&rsquo;t forget to click the <strong>Save Menu</strong> button.</div>
+<h3>
+	<strong>2. Create Vertical Menu</strong></h3>
+<p>
+	<strong>Front-end look like:</strong></p>
+<p>
+	<img alt="" src="assets/images/image_16.png"></p>
+<p>
+	<strong>Backend setting by following some steps :</strong></p>
+<p>
+	- Navigate to <strong>Appearance</strong> &rarr; <strong>Menus </strong>and click the &ldquo;<strong>create a new menu</strong>&rdquo; link.</p>
+<p>
+	- Enter a name for it the &ldquo;<strong>Menu Name</strong>&rdquo; box and drag each item into menu :</p>
+<p>
+	- After creating Vertical menu, you need set position by navigate to <strong>Appearance</strong> &rarr; <strong>Widgets </strong></p>
+<p>
+	Set <strong>Menu </strong>to <strong>Vertical Menu </strong>Sidebar position like image :</p>
+<p>
+	<img alt="" src="assets/images/image_32.png"></p>
+<p>
+	Setting like image :</p>
+<p>
+	<img alt="" src="assets/images/image_33.png"></p>
+<p>
+	<strong>Follow our video guide to know more : </strong></p>
+<p>
+	<iframe allowfullscreen="" frameborder="0" height="315" scrolling="no" src="http://www.youtube.com/embed/9fI1OLlusjU" width="560"></iframe></p>
+<h3>
+	3. Using Opal Megamenu tools.</h3>
+<p>
+	- Navigate to <strong>Appearance</strong> &rarr;<strong> Theme Options</strong></p>
+<p>
+	<strong>- </strong>Go to <strong>Megamenu</strong> Tab &rarr;<strong>&nbsp; </strong>select <strong>Menu </strong>you want to edit then click<strong> Megamenu Editor</strong></p>
+<p>
+	<img alt="" src="assets/images/image_28.png"></p>
+<p>
+	<strong>Follow our video guide to know more : </strong></p>
+<p>
+	<iframe allowfullscreen="" frameborder="0" height="315" scrolling="no" src="http://www.youtube.com/embed/D3T8fFjy_xA" width="560"></iframe></p>
+</section>
+<section id="setting_home_page">
+	<div class="page-header"><h3>Setting Home Page</h3><hr class="notop"></div>
+<p>
+	You can quickly build a home page using Visual Composer for WordPress that is drag and drop frontend and backend page builder plugin that will save you tons of time working on the site content. You will be able to take full control over your WordPress site, build any layout you can imagine &ndash; no programming knowledge required</p>
+<p>
+	From your <strong>Dashboard </strong>admin&nbsp; Navigate to <strong>Pages</strong></p>
+<p>
+	&nbsp; - Select <strong>All Pages</strong> to see all page then click edit one page you want</p>
+<p>
+	&nbsp; - Select <strong>Add New </strong>to create new page</p>
+<p>
+	<strong>1. Classic Mode</strong></p>
+<p>
+	You can insert code on table then Home page will be created automatically.</p>
+<p>
+	<img alt="" src="assets/images/image_19.png"></p>
+<p>
+	<strong>Source</strong></p>
+<div class="alert alert-info">
+	[vc_row][vc_column width=&quot;1/1&quot;][rev_slider_vc alias=&quot;slider&quot;][/vc_column][/vc_row]<br>
+	[vc_row][vc_column width=&quot;9/12&quot; el_class=&quot;slideshow&quot;]<br>
+	[vc_text_separator title=&quot;BEST SALE OF THE MONTH&quot; el_class=&quot; title-hot&quot; icon_image=&quot;1220&quot;]<br>
+	[wpo_products type=&quot;best_selling&quot; style=&quot;carousel&quot; number=&quot;8&quot; columns_count=&quot;4&quot;]<br>
+	[vc_single_image image=&quot;1362&quot; border_color=&quot;grey&quot; img_link_target=&quot;_self&quot; img_size=&quot;full&quot;][vc_text_separator title=&quot;Fashion&quot; icon_image=&quot;1219&quot;][vc_tabs][vc_tab title=&quot;Fashion for women &quot; tab_id=&quot;1403767140336-0-7&quot;][wpo_productcategory category=&quot;fashion-mother-and-baby&quot; style=&quot;carousel&quot; number=&quot;4&quot; columns_count=&quot;4&quot;][/vc_tab][vc_tab title=&quot;Fashion for men&quot; tab_id=&quot;1403767140421-0-10&quot;][wpo_productcategory category=&quot;fashion-for-men&quot; style=&quot;grid&quot; number=&quot;4&quot; columns_count=&quot;4&quot;][/vc_tab][/vc_tabs][vc_text_separator title=&quot;Digital devices&quot; icon_image=&quot;1218&quot;][vc_tabs][vc_tab title=&quot;Computer Accessories &quot; tab_id=&quot;1403767047700-0-7&quot;][wpo_productcategory category=&quot;digital-devices&quot; style=&quot;carousel&quot; number=&quot;4&quot; columns_count=&quot;4&quot;][/vc_tab][vc_tab title=&quot;Headphones &quot; tab_id=&quot;1403767047785-0-3&quot;][wpo_productcategory category=&quot;health-equipment&quot; style=&quot;carousel&quot; number=&quot;4&quot; columns_count=&quot;4&quot;][/vc_tab][vc_tab title=&quot;Phone &quot; tab_id=&quot;1403767326747-2-3&quot;][wpo_productcategory category=&quot;phone-accessories&quot; style=&quot;carousel&quot; number=&quot;4&quot; columns_count=&quot;4&quot;][/vc_tab][vc_tab title=&quot;Camera&quot; tab_id=&quot;1403767398676-3-9&quot;][wpo_productcategory category=&quot;digital-devices&quot; style=&quot;carousel&quot; number=&quot;4&quot; columns_count=&quot;4&quot;][/vc_tab][/vc_tabs][vc_single_image image=&quot;1384&quot; border_color=&quot;grey&quot; img_link_target=&quot;_self&quot; img_size=&quot;full&quot;][/vc_column][vc_column width=&quot;3/12&quot; el_class=&quot;wpo-sidebar-right&quot;][vc_widget_sidebar sidebar_id=&quot;sidebar-right&quot;][/vc_column][/vc_row][vc_row el_class=&quot;brands-logo &quot;][vc_column width=&quot;1/1&quot;][vc_row_inner][vc_column_inner width=&quot;1/2&quot;][vc_text_separator title=&quot;testimonials&quot;][wpo_testimonials skin=&quot;skin-1&quot;][/vc_column_inner][vc_column_inner width=&quot;1/2&quot;][vc_text_separator title=&quot;top brands&quot;][wpo_brands title=&quot; Top brands &quot; number=&quot;6&quot;][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row][vc_row el_class=&quot;banner-bottom&quot;][vc_column width=&quot;1/3&quot;][vc_column_text]<br>
+	&lt;div class=&quot;hover-border&quot;&gt;<br>
+	&lt;div class=&quot;media well hover-border-inner&quot;&gt;<br>
+	&lt;div class=&quot;pull-left icon-logo fa fa-truck&quot;&gt;&lt;/div&gt;<br>
+	&lt;div class=&quot;media-body&quot;&gt;<br>
+	&lt;h3 class=&quot;banner&quot;&gt;free shipping&lt;/h3&gt;<br>
+	On Orders Over $99<br>
+	<br>
+	&lt;/div&gt;<br>
+	&lt;/div&gt;<br>
+	&lt;/div&gt;<br>
+	[/vc_column_text][/vc_column][vc_column width=&quot;1/3&quot;][vc_column_text]<br>
+	&lt;div class=&quot;hover-border&quot;&gt;<br>
+	&lt;div class=&quot;media well hover-border-inner&quot;&gt;<br>
+	&lt;div class=&quot;pull-left icon-logo fa fa-gift&quot;&gt;&lt;/div&gt;<br>
+	&lt;div class=&quot;media-body&quot;&gt;<br>
+	&lt;h3 class=&quot;banner&quot;&gt;extra saving in stores&lt;/h3&gt;<br>
+	Give The Perfect Gift<br>
+	<br>
+	&lt;/div&gt;<br>
+	&lt;/div&gt;<br>
+	&lt;/div&gt;<br>
+	[/vc_column_text][/vc_column][vc_column width=&quot;1/3&quot;][vc_column_text]<br>
+	&lt;div class=&quot;hover-border&quot;&gt;<br>
+	&lt;div class=&quot;media well hover-border-inner&quot;&gt;<br>
+	&lt;div class=&quot;pull-left icon-logo fa fa-phone&quot;&gt;&lt;/div&gt;<br>
+	&lt;div class=&quot;media-body&quot;&gt;<br>
+	&lt;h3 class=&quot;banner&quot;&gt;24/24 online support&lt;/h3&gt;<br>
+	Anywhere worldwide<br>
+	<br>
+	&lt;/div&gt;<br>
+	&lt;/div&gt;<br>
+	&lt;/div&gt;<br>
+	[/vc_column_text][/vc_column][/vc_row]</div>
+<p>
+	After all done . Don&#39;t foget to clicking <strong>Publish </strong>or <strong>Update Page</strong></p>
+<h3>
+	2: Backend Editor Mode</h3>
+<p>
+	Drag and drop elements you need to build your page layout.</p>
+<p>
+	<img alt="" src="assets/images/image_18.png"></p>
+<p>
+	Moreover Opal team provide to you more elements to create your shop page easier</p>
+<p>
+	Using <strong>Visual Composer</strong> -&gt; Click <strong>Add element</strong>&nbsp; -&gt; Select <strong>WPO Elements</strong> -&gt; Choose <strong>Elements</strong> you want</p>
+<p>
+	<img alt="" src="assets/images/image_5.png"></p>
+<p>
+	For example : using WPO Product Category</p>
+<p>
+	<img alt="" src="assets/images/image_3.png"></p>
+<p>
+	- Choose category to display</p>
+<p>
+	- Set number of products to show</p>
+<p>
+	- Set products count per pages ( set 3 mean 3 products per one carousel)</p>
+<p>
+	- Set icon you want by using code ( go to <a href="http://fortawesome.github.io/Font-Awesome/icons/">there&nbsp; </a>to find more icons)</p>
+<p>
+	- Extra class name: If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your css file.</p>
+<p>
+	<a href="http://vimeo.com/64482230">Watch video about Visual Composer </a></p>
+<h3>
+	<strong>Set a page as Home Page</strong></h3>
+<p>
+	To set one of the pages you already have created as the Home page for your site, from your WordPress dashboard, navigate to <strong>Settings </strong>&rarr; <strong>Reading</strong>.</p>
+<p>
+	Select &ldquo;<strong>A static page</strong>&rdquo; and choose &ldquo;<strong>Your Homepage</strong>&rdquo; as the Front Page.</p>
+<p>
+	<img alt="" src="assets/images/image_6.png"></p>
+<p>
+	Save change then <strong>Homepage </strong>will be set.</p>
+</section>
+<section id="setting_the_blog_page">
+	<div class="page-header"><h3>Setting the Blog Page</h3><hr class="notop"></div>
+<h3>
+	1. Create the blog page</h3>
+<p>
+	Navigate to <strong>Posts </strong>&rarr; <strong>Add New</strong>, then fill your information</p>
+<p>
+	<img alt="" src="assets/images/image_12.png"></p>
+<p>
+	- Start filling in the blanks: enter your<strong> post title</strong>, write your actual <strong>body content</strong> in the main post editing box below it.</p>
+<p>
+	- As needed, select a <strong>category</strong>, add <strong>tags</strong>, and make other selections from the sections below the post.</p>
+<p>
+	- You can create blog post with a lot of <strong>Formats </strong>like link, gallery, image ..... Select format you want to create on Format from in right sidebar.</p>
+<p>
+	- Moreover you can embed video, audio, link on title blog when you set it in &quot;<strong>Embed Options</strong>&quot; section</p>
+<p>
+	&nbsp;+ Embed Post format : you can fill the link of <strong>youtube </strong>and <strong>vimeo </strong>to embed video</p>
+<p>
+	&nbsp;+ Link Post format : fill the link to embed link in title of blog post.</p>
+<p>
+	- Use <strong>SEO&nbsp; Fields</strong> to create SEO for you blog post</p>
+<p>
+	- When your post is ready, click <strong>Publish</strong>.</p>
+<p>
+	<strong>2. Manager current all blogs</strong></p>
+<p>
+	Navigate to <strong>Posts </strong>&rarr; <strong>All Posts</strong></p>
+<p>
+	You can see all informations of you blog post, add new, edit or delete them.</p>
+</section>
+<section id="theme_options_panel">
+	<div class="page-header"><h3>Theme Options Panel</h3><hr class="notop"></div>
+<p>
+	Opal Theme use powerful theme options that helps you easily take control over the appearance of your site, by allowing you to upload your logo, style the theme with your custom unlimited colors, turn features on and off, without having to write any code.</p>
+<p>
+	To access go to your admin <strong>Dashboard&nbsp; </strong>Navigate to <strong>Appearance</strong> &gt;&gt; <strong>Theme Options</strong></p>
+<p>
+	<img alt="" src="assets/images/image_31.png"></p>
+<p>
+	- Tab&nbsp;<strong> General</strong> : Manage general setting like your logo, edit your header layout...</p>
+<p>
+	<strong>- </strong>Tab <strong>Single Post </strong>: Manage setting of single post</p>
+<p>
+	<strong>- </strong>Tab <strong>SEO Optione : </strong>Manage Seo and custom word meta</p>
+<p>
+	<strong><strong>- </strong></strong>Tab <strong><strong>Social Setting</strong></strong> :Manage Social Networks icons and links</p>
+<p>
+	- Tab <strong>Customization </strong>: Customize the colors, backgrounds and fully theme appearance</p>
+<p>
+	- Tab <strong>Megamenu</strong> : Setting&nbsp; your megamenu</p>
+<p>
+	- Tab <strong>Woocommerce</strong> : manager some setting for products like image bellow.</p>
+<p>
+	<img alt="" src="assets/images/image_35.png"></p>
+</section>
+<section id="customization">
+	<div class="page-header"><h3>Customization</h3><hr class="notop"></div>
+<p>
+	<strong>Live Theme Editor </strong>is great and powerly module to customize your theme by Opal themes . Opal themes developed the back-end control tools that allow to customize your theme. You can change unlimited colour item, colour text, colour background, and almost item in your theme... Powerful option panel which allows you to change not only elements colours, but also change theme&#39;s backgrounds, upload your own full size image background or your own pattern!</p>
+<p>
+	- Navigate to <strong>Appearance </strong>&rarr; <strong>Theme Options</strong>&nbsp; in your <strong>WordPress admin dashboard</strong>.</p>
+<p>
+	<strong>- </strong>Click on<strong> </strong><strong>Customization</strong> Tab, select <strong>Live Theme Editor</strong></p>
+<p>
+	<img alt="" src="assets/images/image_4.png"></p>
+<p>
+	- After you create one customization theme, go back there and <strong>Select customization theme</strong> .</p>
+<p>
+	- Click <strong>Save Options</strong> to make front-end site look like customization theme.</p>
+<p>
+	<strong>Follow our video guide to know&nbsp; how to use Live Theme Editor: </strong></p>
+<p>
+	<iframe allowfullscreen="" frameborder="0" height="315" scrolling="no" src="http://www.youtube.com/embed/cNmCEzwnmr0" width="560"></iframe></p>
+<p>
+	<strong>Follow our video guide to know how to customize Live Theme Editor for developer: </strong></p>
+<p>
+	<iframe allowfullscreen="" frameborder="0" height="315" scrolling="no" src="http://www.youtube.com/embed/b03Za9guoYY" width="560"></iframe></p>
+</section>
+<section id="setting_newsletter">
+	<div class="page-header"><h3>Setting NewsLetter</h3><hr class="notop"></div>
+<p>
+	We using MailChimp for WP plug-in for newsletter subscribe. You can read more about MailChimp from <a href="http://mailchimp.com">here</a></p>
+<p>
+	<strong>Front Page look like :</strong></p>
+<p>
+	<img alt="" src="assets/images/image_15.png"></p>
+<p>
+	<strong>Setting up</strong></p>
+<p>
+	Navigate to <strong>Appearance &gt;&gt; MailChimp for WP</strong> from your admin Dashboard</p>
+<p>
+	Import HTML Code below on section Form mark-up Source</p>
+<p>
+	<img alt="" src="assets/images/image_26.png"></p>
+<p>
+	<strong>Source :</strong></p>
+<div class="alert alert-info">
+	&lt;div class=&quot;row&nbsp; newsletter-sign&quot;&gt;<br>
+	&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-8 news-sign &quot;&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;pull-left&quot;&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3 class=&quot;base-color&quot;&gt;Newsletter sign-up&lt;/h3&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Sed ut perspiciatis unde omnis&lt;/p&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;pull-right sent-mail &quot;&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;input-group&quot;&gt;<br>
+	&lt;input class=&quot;form-control input-lg&quot; type=&quot;email&quot; name=&quot;EMAIL&quot; placeholder=&quot;Your email address&quot; /&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span class=&quot;input-group-btn&quot;&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;button class=&quot;btn btn-primary btn-lg&quot; type=&quot;submit&quot;&gt;&lt;i class=&quot;fa fa-envelope&quot;&gt;&lt;/i&gt; subscribe&lt;/button&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/span&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+	&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+	&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4 follow &quot;&gt;<br>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3 class=&quot;white&quot; &gt;follow us on&lt;/h3&gt;<br>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ul class=&quot;social &quot;&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a title=&quot;&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; class=&quot;facebook&quot; href=&quot;#&quot; data-original-title=&quot;Facebook&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a title=&quot;&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; class=&quot;twitter&quot; href=&quot;https://twitter.com/_DanCof_&quot; data-original-title=&quot;Twitter&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a title=&quot;&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; class=&quot;google-plus&quot; href=&quot;#&quot; data-original-title=&quot;Google plus&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a title=&quot;&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; class=&quot;pinterest&quot; href=&quot;#&quot; data-original-title=&quot;Pinterest&quot;&gt;&lt;i class=&quot;fa fa-pinterest&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a title=&quot;&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; class=&quot;youtube&quot; href=&quot;https://www.youtube.com/user/WPOpalTheme/&quot; data-original-title=&quot;Youtube&quot;&gt;&lt;i class=&quot;fa fa-youtube&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br>
+	&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+	&lt;/div&gt;</div>
+<p>
+	After creating from of your plugin. You must set position to display.</p>
+<p>
+	Going <strong>Appearance -&gt; Widgets </strong>then drag mailchimp form to <strong>Newsletter Sidebar</strong> like image below:</p>
+<p>
+	<img alt="" src="assets/images/image_25.png"></p>
+</section>
+<section id="setting_footer">
+	<div class="page-header"><h3>Setting Footer</h3><hr class="notop"></div>
+<h3>
+	<strong>Front-end look like:</strong></h3>
+<p>
+	<img alt="" src="assets/images/image_14.png"></p>
+<h3>
+	1. Create Information</h3>
+<p>
+	- Navigate to <strong>Appearance</strong> &gt;&gt; <strong>Widgets</strong></p>
+<p>
+	- Select <strong>Sidebar Footer 1</strong></p>
+<p>
+	Import <strong>Text widgets</strong> to there as HTML Code below</p>
+<p>
+	<img alt="" src="assets/images/image_21.png"></p>
+<p>
+	<strong>Source:</strong></p>
+<div class="alert alert-info">
+	&lt;address&gt;<br>
+	&lt;p class=&quot;add&quot;&gt;<br>
+	This is Photoshop&#39;s version&nbsp; of Lorem&nbsp; sed odio sit amet nibh vulputate cursus ipsum velit. Nam nec tellus a odio tinci dunt auctor a ornare odio. tfelis dapibus condimentum sit amet a auguenisl quis neque orci enim.&lt;/p&gt;<br>
+	&nbsp; &lt;p class=&quot;effect&quot; &gt;&lt;i class=&quot;fa fa-phone&quot;&gt;&lt;/i&gt;&nbsp; +084) 0123 456 789&lt;/p&gt;<br>
+	&lt;p class=&quot;effect&quot;&gt;<br>
+	&nbsp; &lt;i class=&quot;fa fa-envelope-o&quot;&gt;&lt;/i&gt; Email:&lt;a href=&quot;mailto:#&quot;&gt; &#105;&#110;&#102;&#111;&#64;&#98;&#114;&#97;&#105;&#110;&#111;&#115;&#46;&#118;&#110;&lt;/a&gt;<br>
+	&lt;/p&gt;<br>
+	&lt;/address&gt;</div>
+<h3>
+	2. Create Custom Link</h3>
+<p>
+	- Navigate to <strong>Appearance</strong> &gt;&gt; <strong>Widgets</strong></p>
+<p>
+	- Select <strong>Sidebar Footer 2 and 3</strong></p>
+<p>
+	Import <strong>Custom Menu</strong> to display menu link ( remember you need to create menu first)</p>
+<p>
+	<img alt="" src="assets/images/image_22.png"></p>
+<h3>
+	3. Create Map Information</h3>
+<p>
+	- Navigate to <strong>Appearance</strong> &gt;&gt; <strong>Widgets</strong></p>
+<p>
+	- Select <strong>Sidebar Footer 4</strong></p>
+<p>
+	Import <strong>Text widgets</strong> to there as HTML Code below</p>
+<p>
+	<img alt="" src="assets/images/image_23.png"></p>
+<p>
+	<strong>Source:</strong></p>
+<div class="alert alert-info">
+	&lt;div class=&quot;under-base&quot;&gt;<br>
+	[vc_gmaps link=&quot;40.70822943507969,-73.9992465062989&quot; size=&quot;200&quot;]&lt;/div&gt;<br>
+	&lt;p class=&quot;location effect&quot;&gt;&lt;i class=&quot;fa fa-map-marker&quot;&gt;&lt;/i&gt;<br>
+	30 South Park Avenue San Francisco, CA 94108, USA&nbsp; &lt;/p&gt;</div>
+</section>
+<section id="faqs">
+	<div class="page-header"><h3>FAQs</h3><hr class="notop"></div>
+<h3>
+	1. How To Enable the Registration Form on the &lsquo;Login/My Account&rsquo; page?</h3>
+<p>
+	In case you cannot see the Registration Form on the My Account page or checkout page, it means you need to enable it.</p>
+<p>
+	You can find this setting by navigating to <strong>WooCommerce </strong>&gt;&gt; <strong>Settings</strong>.</p>
+<p>
+	Open <strong>Account </strong>Tab In the <strong>Registration </strong>section, make sure the&quot; <strong>Enable registration on the &quot;Checkout&quot; page</strong>&quot; and&nbsp; &ldquo;<strong>Enable registration on the &ldquo;My Account&rdquo; page</strong>&rdquo; options is checked.</p>
+<p>
+	This is what you should be seeing on your screen:</p>
+<p>
+	<img alt="" src="assets/images/image_8.png"></p>
+<h3>
+	2. How To Add Color/Size selection box on the product page?</h3>
+<p>
+	In <strong>WooCommerce</strong>, you can define product attributes, such as size or color, to use be used as product options.</p>
+<p>
+	Start by navigating to<strong> Products</strong> &rarr; <strong>Attributes</strong>.</p>
+<p>
+	For example an attribute could be &ldquo;Size&ldquo;. Then you need to Configure its terms. Those would be &ldquo;Small, Medium, Large&ldquo;.</p>
+<p>
+	Once defined, these global attributes can be assigned to your variable products.</p>
+</section>
+<section id="finally">
+	<div class="page-header"><h3>Finally</h3><hr class="notop"></div>
+<p>
+	&nbsp;</p>
+<h2>
+	Thank you for reading!</h2>
+<p>
+	We hope you can create the best website with our themes.</p>
+<p>
+	One again, thank you so much for using our theme. As i said at the beginning, i&#39;d be glad to help you if you have any questions relating to this theme. No guarantees, but i&#39;ll do my best to assist. If you have a more general question relating to the themes.</p>
+<p>
+	Do not hesitant to contact us via email : <strong>O&#112;&#97;&#108;&#119;&#111;&#114;&#100;&#112;&#114;&#101;&#115;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</strong> or submit ticket via <a href="https://www.wpopal.com">Opal Forum</a></p>
+<p>
+	Please take a screenshot photo with descriptions about your problem. More details about your problems help us more easier to figure out and respond you sooner.</p>
+<p>
+	*******************Note*********************************************************************************************************</p>
+<p>
+	<strong>SCOPE OF SUPPORT </strong></p>
+<p>
+	Our support covers getting setup, trouble using any features and any bug fixes that may arise. Unfortunately we cannot provide support for customizations or 3rd party plugins. If you need help with customizations of your theme, please contact with us with your requirement. Our technical team will help you with some fees.</p>
+<p>
+	<strong>SUPPORT SCHEDULE</strong></p>
+<p>
+	Our working time is <strong>8:30am - 5:30pm</strong> from <strong>Monday to Friday (GMT+7)</strong>. So if you email us or submit ticket besides this working time, we are really sorry that we are not able to respond you soon. We will try to reply you as fast as we can. Especially if you email or submit ticket at weekend, please be patient and we will respond to you right when we are back on Monday.</p>
+<p>
+	&nbsp;</p>
+</section>
+
+	</div>
+</body>
+</html>

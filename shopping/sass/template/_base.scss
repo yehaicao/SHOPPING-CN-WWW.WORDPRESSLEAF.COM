@@ -1,0 +1,468 @@
+html,
+body {
+    font-family: $theme-font-family;
+    font-weight: $theme-font-weight;
+}
+
+body.modal-open {
+    overflow-y: visible;
+    overflow-x: scroll;
+}
+
+.noscroll {
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    text-transform: $headings-transform;
+}
+
+img {
+    max-width: 100%;
+}
+//--------------------------state active--------------------------
+.open {
+    > a {
+        color: $link-color-hover;
+    }
+}
+a {
+    &:hover, &:focus {
+        color: $link-color-hover;
+    }
+}
+ins {
+    text-decoration: none;
+}
+
+iframe {
+    border: none;
+}
+input, textarea {
+    max-width: 100%;
+}
+select,
+input{
+    &:focus{
+        outline: none;
+    }
+}
+label {
+    font-weight: normal;
+}
+
+form label {
+    font-weight: normal;
+}
+
+button, .button {
+    text-transform: uppercase;
+}
+
+.addthis {
+    .addthis_button_google_plusone {
+        margin-left: -25px;
+        margin-right: -29px;
+    }
+}
+
+.video-responsive {
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 56.25%;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    embed, iframe, object, video {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+}
+
+.audio-responsive {
+    iframe {
+        width: 100%;
+        height: 126px;
+    }
+}
+
+//-------------------------- Google Map--------------------------
+
+.map_canvas {
+    img {
+        max-width: none;
+    }
+}
+
+.spinner {
+    background: url('#{$image-theme-path-base}spinner.gif') no-repeat;
+    background-size: 20px 20px;
+    display: block;
+    @include opacity(.7);
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+// --------------------------slide-----------------------------
+.slide{
+    position: relative;
+}
+// --------------------------Carousel--------------------------
+.carousel-controls {
+    position: absolute;
+    @include rtl-right(0);
+    z-index: 999;
+    @include text-shadow(none);
+    @include clearfix();
+    a {
+        @include size(22px, 22px);
+        @include rtl-float-left ();
+        display: table;
+        border: $carousel-controls-border ;
+        color:  $carousel-controls-link ;
+        background: #fff;
+        text-align: center;
+        &:hover {
+            position: relative;
+            z-index: 99;
+            border: $carousel-controls-border-hover ;
+            color: $carousel-controls-link-hover;
+        }
+        &.prev{
+            @include rtl-margin-right(-1px);
+        }
+    }
+    .fa {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: $carousel-font-size;
+        font-weight: bold;
+    }
+}
+.carousel-control {
+    @include text-shadow(none);
+    @include box-shadow(none);
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    @include opacity(0.5);
+    &.left {
+        background-image: none;
+        left: 0;
+    }
+    &.right {
+        background-image: none;
+        right: 0;
+    }
+    &:hover {
+        @include opacity(1);
+    }
+    span {
+        line-height: 50px;
+    }
+}
+
+// --------------------------nav-tabs--------------------------
+.nav-tabs {
+    border-width: $tab-border-width;
+    position: relative;
+    z-index: 99;
+    > li {
+        @include rtl-margin(-1px, 0, -1px, -1px);
+        > a {
+            color: $nav-tabs-color;
+            @include border(0 1px 3px 1px, solid, transparent);
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: $tabtop-hover-bg;
+                color: $tabtop-hover-color;
+                @include border(0 1px 3px 1px, solid, $tab-border-color);
+                &:after, &:before {
+                    @include tab-hover();
+                }
+                &:before {
+                    @include tab-before();
+                    bottom: $tab-before-bottom;
+                }
+                &:after {
+                    @include tab-after();
+                    bottom: $tab-after-bottom;
+                }
+            }
+        }
+        &.open,
+        &.active {
+            > a:hover,
+            > a:focus,
+            > a:active,
+            > a {
+                background-color: $tabtop-hover-bg;
+                color: $tabtop-hover-color;
+                @include border(0 1px 3px 1px, solid, $tab-border-color);
+                &:after, &:before {
+                    @include tab-hover();
+                }
+                &:before {
+                    @include tab-before();
+                    bottom: $tab-before-bottom;
+                }
+                &:after {
+                    @include tab-after();
+                    bottom: $tab-after-bottom;
+                }
+            }
+        }
+    }
+}
+//tour-tab
+.tabs-left{
+    .nav-tabs{
+        width: 20%;
+        float: left;
+        > li{
+            width: 100%;
+            margin: 0;
+            &.active,
+            &:hover,
+            &:active,
+            &:focus{
+               a{
+                   &:before,
+                   &:after{
+                       display: none;
+                   }
+               }
+            }
+        }
+    }
+    .tab-content{
+        width: 80%;
+        float: left;
+        border: 1px solid $border-color;
+        margin-left: -1px;
+    }
+    &.tabs-right{
+        .nav-tabs,
+        .tab-content{
+            float: right;
+        }
+        .tab-content{
+            margin-right: -1px;
+        }
+    }
+}
+//--------------------------nav--------------------------
+.nav{
+    > .open > a {
+        &,
+        &:hover,
+        &:focus {
+            background-color:$nav-link-hover-bg;
+        }
+    }
+}
+// --------------------------tab--------------------------
+.tab-content {
+    @include border(0 1px 1px, solid, $product-border-color);
+    padding: $widget-tag-padding;
+}
+//--------------------------breadcrumb--------------------
+.breadcrumb {
+    color: $breadcrumb-color;
+    .current, .active {
+        color: $breadcrumb-link-active;
+    }
+}
+
+//--------------------------navbar---------------
+.navbar-nav {
+    @include rtl-float-left ();
+    > li{
+        @include rtl-float-left ();
+    }
+}
+.navbar-default{
+    background: $navbar-bg;
+    border-color: $navbar-border;
+    ul{
+        padding: 0;
+        list-style: none;
+        li{
+            line-height: 30px;
+        }
+    }
+    .navbar-nav {
+        > li > a {
+            text-transform: uppercase;
+            &:active,
+            &:hover,
+            &:focus {
+                color: $navbar-link-hover-color;
+                background: transparent;
+
+            }
+        }
+        .open > a,
+        .active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $navbar-link-hover-color;
+                background: transparent;
+            }
+        }
+    }
+}
+//--------------------------dropdown-menu-----------------
+.dropdown-menu{
+    @include rtl-left(0);
+    .active,
+    .open{
+        > a{
+            &,
+            &:hover,
+            &:focus {
+                color: $navbar-dropdown-link-hover-color;
+            }
+        }
+    }
+}
+//---------------------------list style ul
+ul,ol{
+    padding: 0;
+    margin: 0;
+    li{
+        list-style-position: inside;
+    }
+    ul,ol{
+        @include rtl-padding-left($theme-padding);
+    }
+}
+/*-------------------------------------------
+	Pagination
+-------------------------------------------*/
+.pagination {
+    > li > span {
+        color: $pagination-link-color-hover;
+        background-color: $pagination-link-bg-hover;
+        border-color: $pagination-border-hover;
+        &:hover, &:active, &:focus {
+            color: $pagination-link-color-hover;
+            background-color: $pagination-link-bg-hover;
+            border-color: $pagination-border-hover;
+        }
+    }
+    > li > a {
+        &:hover,
+        &:focus {
+            color: $pagination-link-color-hover;
+            background-color: $pagination-link-bg-hover;
+            border-color: $pagination-border-hover;
+        }
+    }
+}
+.result-count {
+    color: $pagination-color;
+}
+/*-------------------------------------------
+	Modal
+-------------------------------------------*/
+
+.modal-content {
+    @include box-shadow(none);
+    @include border-radius(0);
+}
+
+.modal-lg {
+    width: 900px;
+    &.modal-min-width {
+        @include size(500px, auto);
+        min-height: 90px;
+        .modal-content {
+            border: 0;
+        }
+    }
+    .total, .buttons {
+        text-align: center;
+    }
+    .amount {
+        color: $theme-color;
+    }
+}
+
+/*------------------------------------*\
+    Typographic
+\*------------------------------------*/
+
+div.wpcf7-validation-errors {
+    margin: 0;
+    padding: 15px;
+}
+
+.contact-form-content {
+    padding: $theme-padding;
+    background: #fff;
+    margin-bottom: $theme-margin;
+    min-height: 260px;
+    .rounded {
+        display: table;
+        color: $white;
+        text-align: center;
+        @include size(40px, 40px);
+        background: darken(#fff, 20%);
+        .fa {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 16px;
+        }
+    }
+    small {
+        color: darken($text-color, 20%);
+    }
+}
+
+.rounded {
+    @include border-radius(50px);
+}
+
+.group-input-form {
+    margin-bottom: 20px;
+    input[type="email"],
+    input[type="text"] {
+        border-width: 1px 0px 1px 1px;
+    }
+    .input-group-addon {
+        padding: 0;
+        position: relative;
+        border-width: 1px 1px 1px 0;
+        border-style: solid;
+        border-color: $border-color;
+        background: none transparent;
+        @include border-radius(0);
+        .fa {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            color: $black;
+            @include size(36px, 36px);
+            background: none transparent;
+        }
+    }
+}
+// address
+address {
+    .add {
+        margin: 0 0 30px 0;
+    }
+}
+mark{
+    background: transparent;
+}
